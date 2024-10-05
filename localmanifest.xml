@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+        <remote name="Ayase"
+        fetch="https://github.com/Shorekeeper-nex" clone-depth="1" />
+
+        <remote name="gitlab"
+        fetch="https://gitlab.com/" clone-depth="1" />
+
+        <remote name="alternoegraha"
+        fetch="https://github.com/alternoegraha" clone-depth="1" />
+
+        <remote name="Iverz"
+        fetch="https://github.com/asterixiverz" clone-depth="1" />
+
+        <!-- Sync Trees -->
+        <project path="device/xiaomi/fog" name="android_device_xiaomi-fog" remote="Ayase" revision="arrow-t" />
+        <project path="kernel/xiaomi/fog" name="wwy_kernel_xiaomi_fog_rebase" remote="alternoegraha" revision="another-reset" />
+        <project path="vendor/xiaomi/fog" name="vendor_xiaomi_fog" remote="alternoegraha" revision="thirteen" />
+
+        <!-- Sync Hardware Dependencies for Xiaomi Devices -->
+        <project path="hardware/xiaomi" name="hardware_xiaomi" remote="Iverz" revision="thirteen-aosp" />
+
+        <!-- Sync Clang r450784d-->
+        <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="tejas101k/clang-r450784d" remote="gitlab" revision="master" />
+
+        <!-- Private keys -->
+        <project path="vendor/arrow/signing/keys" name="keys" remote="Ayase" revision="master" />
+
+</manifest>
